@@ -5,7 +5,7 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Mode() {
-  const [dark, setDark] = useState<boolean>(false);
+  const [dark, setDark] = useState<boolean>();
   useEffect(() => {
     const theme = localStorage.getItem("dark");
     setDark(theme);
