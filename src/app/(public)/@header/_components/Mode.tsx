@@ -5,21 +5,23 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Mode() {
-  const [dark, setDark] = useState<boolean>();
+  const [dark, setDark] = useState<boolean>(false);
 
   useEffect(() => {
-    localStorage.setItem("dark", dark);
     const theme = localStorage.getItem("dark");
-    setDark(theme);
+    if (theme === null) {
+      localStorage.setItem("dark", "false");
+    }
+    setDark(Boolean(theme));
   }, []);
 
   useEffect(() => {
     if (dark) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("dark", dark);
+      localStorage.setItem("dark", "true");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("dark", dark);
+      localStorage.setItem("dark", "false");
     }
   }, [dark]);
 
