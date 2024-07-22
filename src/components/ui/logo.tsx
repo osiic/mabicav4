@@ -5,7 +5,7 @@ import { Large } from "@/components/typography/large";
 import { cn } from "@/lib/utils";
 
 interface LogoProps {
-  className: string;
+  className?: string;
 }
 
 export function Logo({ className }: LogoProps) {
