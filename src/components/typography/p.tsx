@@ -7,6 +7,16 @@ export interface ParagraphProps {
 
 export function P({ children, className }: ParagraphProps) {
   return (
-    <p className={cn("text-muted-foreground text-sm", className)}>{children}</p>
+    <p
+      className={cn(
+        className,
+        "text-muted-foreground text-sm",
+        "md:text-base",
+        "lg:text-lg",
+        "xl:text-xl"
+      )}
+    >
+      {children}
+    </p>
   );
 }

@@ -10,13 +10,13 @@ export function Menu() {
 
   return (
     <>
-      <Button onClick={() => setNav(!nav)} size="icon" variant="ghost">
+      <Button onClick={() => setNav(!nav)} size="icon" variant="ghost" className="lg:hidden">
         {nav ? <X size="20" /> : <Hamburger size="20" />}
       </Button>
       {nav && (
-        <div className="fixed top-0 left-0 z-[-100]">
-          <nav className="bg-background w-screen flex justify-center items-center h-screen container py-28">
-            <ul className="space-y-5 text-lg font-medium">
+        <div className="fixed top-0 left-0 right-0 z-[-100] bg-background">
+          <nav className=" w-screen flex justify-center items-center h-screen container py-28">
+            <ul className="space-x-2 text-lg font-medium">
               <li>
                 <Link href="/">Home</Link>
               </li>

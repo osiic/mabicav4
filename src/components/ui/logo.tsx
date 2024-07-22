@@ -4,10 +4,14 @@ import { Large } from "@/components/typography/large";
 
 import { cn } from "@/lib/utils";
 
-export function Logo({}) {
+interface LogoProps {
+  className: string;
+}
+
+export function Logo({ className }: LogoProps) {
   return (
-    <Link href="/" className={cn("flex gap-1 items-center")}>
-      <div className="w-10 lg:w-16">
+    <Link href="/" className={cn(className, "flex gap-1 items-center")}>
+      <div className="w-10 lg:w-10">
         <Image
           src="/logo.svg"
           width="64"

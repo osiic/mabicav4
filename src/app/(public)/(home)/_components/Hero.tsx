@@ -7,8 +7,8 @@ import Link from "next/link";
 export function Hero() {
   return (
     <main id="home" className="container py-5 pt-28 flex flex-col text-center justify-center items-center gap-2">
-      <H1>Lazy to read? Just Listen, <br /> Stories Await.</H1>
-      <P>
+      <H1>Lazy to read? Just Listen, Stories Await.</H1>
+      <P className="md:w-8/12 lg:w-7/12 xl:w-5/12">
         Listening to stories as a practical way to enjoy the world of
         literature. Discover adventure through the sound of words.
       </P>

@@ -9,10 +9,10 @@ export function Mode() {
 
   useEffect(() => {
     const theme = localStorage.getItem("dark");
-    if (theme === null) {
-      localStorage.setItem("dark", "false");
+    if (theme === "true") {
+      setDark(true);
+      return;
     }
-    setDark(Boolean(theme));
   }, []);
 
   useEffect(() => {
