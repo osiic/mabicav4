@@ -2,7 +2,7 @@ import { Logo } from "@/components/ui/logo";
 import { Action } from "./_components/Action";
 import Link from "next/link";
 
-export default function Header() {
+export function Header() {
   return (
     <div className="fixed z-40 top-0 right-0 left-0 backdrop-blur-xl">
       <header className="container w-screen flex justify-between items-center py-5">

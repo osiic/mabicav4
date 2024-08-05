@@ -11,6 +11,7 @@ export function H2({ children, className }: props) {
       className={cn(
         className,
         "scroll-m-20 text-lg font-semibold tracking-tight first:mt-0",
+        "lg:text-4xl"
       )}
     >
       {children}

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
 
 import { H3 } from "@/components/typography/h3";
@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button";
 
 export function Card() {
   return (
-    <Link href="/audiobook">
+    <Link href="/audiobooks/story">
       <div className="overflow-hidden rounded-xl mb-2 relative">
         <Button
           asChild
-          className="absolute bottom-2 left-2"
+          className="absolute lg:px-4 lg:text-lg bottom-2 left-2"
           variant="secondary"
           size="sm"
         >
@@ -26,8 +26,11 @@ export function Card() {
         />
       </div>
       <H3>The Book Of Cemy</H3>
-      <P className="line-clamp-2">
-        Lorem ausdhjabsd kjhbkahjs kjhas d lajhksgd kjhgkjah gksjhgdjhkjashdas
+      <P className="line-clamp-2 lg:text-lg">
+        Judul asli, The Hero Returns Penulis: B.Ain kisah kepahlawanan Kim Sung
+        BIn untuk menyelamatkan dunia dan dia kembali ke dua puluh tahun silam,
+        maka dia memulai petualangannya kembali dan menjadi seorang pahlawan
+        karena diberikan waktu untuk mengubah segalanya.
       </P>
     </Link>
   );

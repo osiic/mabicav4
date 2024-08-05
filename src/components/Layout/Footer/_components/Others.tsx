@@ -13,7 +13,7 @@ const contact: itemsTypes[] = [
 
 export function Others() {
   return (
-    <div className="flex flex-col flex-wrap gap-4">
+    <div className="flex lg:flex-row flex-col flex-wrap gap-4">
       <Links heading="Follow Us" items={social} />
       <Links heading="Contact" items={contact} />
     </div>

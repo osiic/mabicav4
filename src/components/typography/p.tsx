@@ -9,11 +9,10 @@ export function P({ children, className }: ParagraphProps) {
   return (
     <p
       className={cn(
-        className,
         "text-muted-foreground text-sm",
         "md:text-base",
-        "lg:text-lg",
-        "xl:text-xl"
+        "lg:text-2xl",
+        className,
       )}
     >
       {children}

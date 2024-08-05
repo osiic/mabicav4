@@ -1,15 +1,16 @@
+import { Header } from "@/components/Layout/Header";
+import { Footer } from "@/components/Layout/Footer";
+
 interface PulicLayoutProps {
-  header: React.ReactNode;
   children: React.ReactNode;
-  footer: React.ReactNode;
 }
 
-export default function PublicLayout({ header, children, footer }: PulicLayoutProps) {
+export default function PublicLayout({ children }: PulicLayoutProps) {
   return (
     <div className="background">
-      {header}
+      <Header />
       {children}
-      {footer}
+      <Footer />
     </div>
   );
 }

@@ -11,6 +11,7 @@ export function Small({ children, className }: props) {
       className={cn(
         className,
         "font-medium text-muted-foreground text-base leading-none",
+        "lg:text-lg"
       )}
     >
       {children}

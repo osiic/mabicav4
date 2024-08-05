@@ -12,8 +12,7 @@ export function H1({ children, className }: props) {
         className,
         "scroll-m-20 text-lg font-semibold tracking-tight",
         "md:text-xl",
-        "lg:text-2xl",
-        "xl:text-3xl"
+        "lg:text-5xl",
       )}
     >
       {children}

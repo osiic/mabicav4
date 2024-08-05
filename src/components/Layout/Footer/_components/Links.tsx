@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { H3 } from "@/components/typography/h3";
+import { Small } from "@/components/typography/small";
 
 export interface itemsTypes {
   title: string;
@@ -18,7 +19,11 @@ export function Links({ heading, items }: LinksProps) {
       <ul className="text-muted-foreground ">
         {items.map((i) => (
           <li key={i?.title}>
-            <Link href={i?.href}>{i?.title}</Link>
+            <Link href={i?.href}>
+              <Small>
+              {i?.title}
+              </Small>
+            </Link>
           </li>
         ))}
       </ul>
